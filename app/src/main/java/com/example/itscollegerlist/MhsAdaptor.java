@@ -39,14 +39,20 @@ public class MhsAdaptor extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup viewGroup) {
-        View itemView = convertView;
-        if (itemView==null){
-            itemView = LayoutInflater.from(context).inflate(R.layout.item_mhs, viewGroup, false);}
-        ViewHolder viewHolder = new ViewHolder(itemView);
-        Mahasiswa mhs = (Mahasiswa) getItem(position);
+        ViewHolder viewHolder;
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_mhs, viewGroup, false);
+            viewHolder = new ViewHolder(convertView);
+            convertView.setTag(viewHolder);
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag(); //Efisiensi memori
+        }
+
+        Mahasiswa mhs = member.get(position);
         viewHolder.bind(mhs);
-        return itemView;
+        return convertView;
     }
+
     private class ViewHolder{
         private TextView tvNama, tvNim, tvProdi;
         private ImageView imgPhoto;
