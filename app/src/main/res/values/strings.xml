@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Its Colleger List</string>
+    <string-array name="data_nama">
+        <item>Rikka</item>
+        <item>Rena</item>
+        <item>Ryan</item>
+        <item>Ado</item>
+        <item>Mion</item>
+    </string-array>
+
+    <string-array name="data_nim">
+        <item>10117130</item>
+        <item>10117131</item>
+        <item>10117132</item>
+        <item>10117133</item>
+        <item>10117134</item>
+    </string-array>
+
+    <string-array name="data_prodi">
+        <item>Teknik Informatika</item>
+        <item>Teknik Informatika</item>
+        <item>Teknik Informatika</item>
+        <item>Teknik Informatika</item>
+        <item>Teknik Informatika</item>
+    </string-array>
+    <string-array name="data_photo">
+        <item>@drawable/rika</item>
+        <item>@drawable/rena</item>
+        <item>@drawable/ryan</item>
+        <item>@drawable/ado</item>
+        <item>@drawable/mion</item>
+    </string-array>
+</resources>

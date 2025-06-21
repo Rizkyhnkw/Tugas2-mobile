@@ -1,0 +1,52 @@
+package com.example.itscollegerlist;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+public class Login extends AppCompatActivity implements View.OnClickListener {
+    EditText etUserId, etUserPass;
+    Button btLogin;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_login);
+
+        etUserId = findViewById(R.id.et_user_id);
+        etUserPass = findViewById(R.id.et_user_pass);
+        btLogin = findViewById(R.id.bt_login);
+
+        btLogin.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        String userLogin = etUserId.getText().toString().trim();
+        String passLogin = etUserPass.getText().toString().trim();
+
+        if (userLogin.isEmpty()){
+            etUserId.setError("Please enter your username");
+        }
+        if (passLogin.isEmpty()){
+            etUserPass.setError("Please enter your password");
+        }else {
+            if (userLogin.equals("a") && passLogin.equals("a")) {
+                Intent intent = new Intent(Login.this, MainActivity.class);
+                startActivity(intent);
+            } else {
+                AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
+                builder.setMessage("Wrong username or password").setNegativeButton("retry", null).show();
+            }
+        }
+    }
+}

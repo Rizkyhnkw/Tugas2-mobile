@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/img_photo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/img_photo"
+        android:text="Nama Mahasiswa"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/tv_namasiswa"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_namasiswa"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:text="NIM"
+        android:textColor="@color/black"
+        android:id="@+id/tv_nim"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_prodi"
+        android:layout_below="@id/tv_nim"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:text="Deskripsi"
+        android:ellipsize="end"
+        android:maxLines="2"/>
+
+</RelativeLayout>
