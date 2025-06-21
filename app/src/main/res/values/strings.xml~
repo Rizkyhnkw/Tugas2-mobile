@@ -17,8 +17,8 @@
     </string-array>
 
     <string-array name="data_prodi">
-        <item>Teknik Informatika</item>
-        <item>Teknik Informatika</item>
+        <item>Hubungan Internasional</item>
+        <item>De</item>
         <item>Teknik Informatika</item>
         <item>Teknik Informatika</item>
         <item>Teknik Informatika</item>
@@ -27,7 +27,7 @@
         <item>@drawable/rika</item>
         <item>@drawable/rena</item>
         <item>@drawable/ryan</item>
-        <item>@drawable/beatrice</item>
+        <item>@drawable/ado</item>
         <item>@drawable/mion</item>
     </string-array>
 </resources>

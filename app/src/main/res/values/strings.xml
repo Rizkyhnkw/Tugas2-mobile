@@ -17,11 +17,11 @@
     </string-array>
 
     <string-array name="data_prodi">
+        <item>Hubungan Internasional</item>
+        <item>Desain Komunikasi Visual</item>
+        <item>Teknologi Hutan</item>
         <item>Teknik Informatika</item>
-        <item>Teknik Informatika</item>
-        <item>Teknik Informatika</item>
-        <item>Teknik Informatika</item>
-        <item>Teknik Informatika</item>
+        <item>Fisika</item>
     </string-array>
     <string-array name="data_photo">
         <item>@drawable/rika</item>
